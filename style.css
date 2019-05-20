@@ -24,7 +24,6 @@ body {
     font-family: 'Pixel';
     src : url(./fonts/Pixel.ttf)
 }
-
 [flappy] {
     position:relative; /*relative to the display flex of the #content */
     position: relative;
