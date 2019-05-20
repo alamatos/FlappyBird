@@ -20,3 +20,18 @@ body {
     align-items: center;
     
 }
+@font-face {
+    font-family: 'Pixel';
+    src : url(./fonts/Pixel.ttf)
+}
+
+[flappy] {
+    position:relative; /*relative to the display flex of the #content */
+    position: relative;
+    border: 5px solid dodgerblue;
+    height: 700px;
+    width: 1200px;
+    margin:15px;
+    background-color: deepskyblue;
+    overflow:hidden
+}
