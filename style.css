@@ -11,10 +11,11 @@ html {
 body {
     margin:0;
     height:100%;
-    background-color :#0D262D ;
+    background-color :#0D262D;
+    color: #fff;
     
 }
-#content {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +25,7 @@ body {
     font-family: 'Pixel';
     src : url(./fonts/Pixel.ttf)
 }
-[flappy] {
+#flappy {
     position:relative; /*relative to the display flex of the #content */
     position: relative;
     border: 5px solid dodgerblue;
@@ -33,4 +34,51 @@ body {
     margin:15px;
     background-color: deepskyblue;
     overflow:hidden
+}
+
+#bird {
+    position: absolute;
+    width:60px;
+    bottom:50%;
+    left:calc(50% - 30px);
+}
+.barriers {
+    position:absolute;
+    top:0;
+    height:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+}
+
+.barrier { 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barrier .top {
+    height: 30px;
+    width : 130px;
+    background: linear-gradient(90deg, #639301, #A5e82e);
+    border: 2px solid #000;
+}
+
+.barrier .body {
+    height: 150px;
+    width: 110px;
+    background:linear-gradient(90deg, #639301, #A5e82e);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progress {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-family:'Pixel';
+    font-size: 70px;
+    z-index: 2;
+
 }
